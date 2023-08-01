@@ -1,0 +1,82 @@
+.main {
+  height: 500px;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  position: relative;
+  width: 225px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+.the-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  transform: rotateY(180deg);
+  animation: cardAnimate 1s 1s forwards ease;
+}
+.charcter-img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  outline: 5px solid #2c174f;
+  border-radius: 20px;
+  transition: 250ms ease;
+}
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background: #6c6969;
+  border-radius: 20px;
+}
+.front:hover {
+  transform: scale(1.05);
+}
+.front,
+.back {
+  outline: 5px solid #2c174f;
+}
+.X {
+  animation: endAnimate 1s forwards;
+}
+@keyframes cardAnimate {
+  from {
+    transform: rotateY(180deg) scale(1);
+  }
+  to {
+    transform: rotateY(0deg) scale(1);
+  }
+}
+@keyframes endAnimate {
+  from {
+    transform: rotateY(0deg) scale(1);
+  }
+  to {
+    transform: rotateY(180deg) scale(1);
+  }
+}
+@media screen and (width < 491px) {
+  .main-container {
+    width: 200px;
+    height: 200px;
+  }
+}

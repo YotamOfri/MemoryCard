@@ -1,0 +1,40 @@
+/* BackgroundMusic.css */
+.music-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: baseline;
+  gap: 50px;
+}
+.volume-bar {
+  width: 100px;
+  height: 10px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 5px;
+  opacity: 1;
+  transition: opacity 0.2s;
+  transform: rotate(270deg);
+  background: #cbfc7e;
+  cursor: pointer;
+}
+.volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #2f1850;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.volumebar-container {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+#sliderVisable {
+  opacity: 1;
+  pointer-events: all;
+}

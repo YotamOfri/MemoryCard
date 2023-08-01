@@ -1,0 +1,10 @@
+.board-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+}
+.score-container {
+  color: #c2fd63;
+}

@@ -1,0 +1,87 @@
+.btns {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.volume-btn,
+.information-btn {
+  width: 40px;
+  height: 40px;
+  color: #2f1850;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cbfc7e;
+  opacity: 0.8;
+  border-radius: 50%;
+  transition: 250ms ease-in-out;
+}
+.volume-btn:hover,
+.information-btn:hover {
+  transform: scale(1.05);
+}
+.volume-btn i,
+.information-btn i {
+  font-size: 1.4rem;
+  z-index: 99;
+}
+.Information-img-container {
+  position: absolute;
+  height: 400px;
+  left: 100%;
+  top: 10%;
+  display: flex;
+  opacity: 0;
+  transition: 250ms ease-in-out;
+}
+.Information-img-container-visible {
+  opacity: 1;
+}
+.Information-img-container > img {
+  width: 100px;
+  height: 100px;
+}
+.information-card-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: rgb(7, 7, 7);
+  flex-shrink: 0;
+  left: 110%;
+  top: -40%;
+  gap: 10px;
+}
+.info-card {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  width: 200px;
+  height: 100px;
+  background-color: #cbfc7e;
+  border-radius: 5px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (width < 491px) {
+  .btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .Information-img-container {
+    top: 40%;
+    left: 80%;
+  }
+  .info-card {
+    width: 125px;
+    font-size: 0.55rem;
+  }
+}

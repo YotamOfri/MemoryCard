@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bangers", cursive;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (width < 491px) {
+  .app {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
