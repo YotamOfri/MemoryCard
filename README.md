@@ -1,12 +1,12 @@
 # Rick and Morty Memory Game
 
-[![Rick and Morty Memory Game](./src/resources/MainPage.png)](https://google.com)
-[![Rick and Morty Memory Game](./src/resources/GamePage.png)](https://google.com)
+[![Rick and Morty Memory Game](./src/resources/MainPage.png)](https://main--dapper-choux-ce6e50.netlify.app/)
+[![Rick and Morty Memory Game](./src/resources/GamePage.png)](https://main--dapper-choux-ce6e50.netlify.app/)
 Welcome to the Rick and Morty Memory Game! This is a memory card game with a theme based on the popular animated TV series "Rick and Morty." Test your memory skills and have fun while enjoying images of your favorite characters from the show.
 
 ## Demo
 
-You can play the live version of the game [here](insert_live_demo_url_here).
+You can play the live version of the game [here](https://main--dapper-choux-ce6e50.netlify.app/).
 
 ## Installation
 
